@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>重心可視化アプリ（MediaPipe + JavaScript）</title>
 
-  <!-- MediaPipe -->
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose"></script>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils"></script>
 
@@ -20,15 +19,12 @@
     video, canvas {
       border-radius: 12px;
       margin-top: 10px;
-      width: 90%;
-      max-width: 640px;
     }
     button {
       margin: 10px;
       padding: 10px 20px;
       font-size: 18px;
       border-radius: 8px;
-      cursor: pointer;
     }
   </style>
 
@@ -36,7 +32,7 @@
 </head>
 <body>
 
-  <h2>姿勢推定＋重心可視化デモ</h2>
+  <h2>姿勢推定＋重心可視化</h2>
 
   <button id="startBtn">スタート</button>
   <button id="stopBtn">ストップ</button>
