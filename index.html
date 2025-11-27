@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pose Demo</title>
+    <style>
+        video {
+            display: none;
+        }
+        canvas {
+            width: 100%;
+            height: auto;
+        }
+        .controls {
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>姿勢推定デモ</h2>
+
+<div class="controls">
+    <button id="startBtn">スタート</button>
+    <button id="stopBtn">ストップ</button>
+    <button id="switchBtn">カメラ切り替え</button>
+</div>
+
+<video class="input_video" playsinline></video>
+<canvas class="output_canvas"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
